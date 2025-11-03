@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
          steps {
                git branch: 'main', url: 'https://github.com/Nik9296/new.git'
-               bat 'python3 app.py'
+               bat 'python app.py'
             }
         }
         stage('Test') {
